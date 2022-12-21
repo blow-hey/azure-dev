@@ -51,6 +51,15 @@ repo:
         patterns:
           - "**/*.tf"
 
+      - from: ../../../../../../common/infra/terraform/core/gateway
+        to: ./modules/gateway
+        patterns:
+          - "**/*.tf"
+      - from: ../../../../../common/infra/terraform/app
+        to: ./modules/app
+        patterns:
+          - "**/*.tf"
+          
       - from: ../../api/python
         to: ./src/api
         patterns:
